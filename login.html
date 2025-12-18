@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập | Web đặt vé xem phim</title>
+    <link rel="stylesheet" href="CSS/Login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <form class="login-box" onsubmit="return handleLogin()">
+        <h2>🎬 ĐĂNG NHẬP</h2>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Nhập email">
+        </div>
+
+        <div class="input-group">
+            <label>Mật khẩu</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu">
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox"> Ghi nhớ đăng nhập
+            </label>
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit">Đăng nhập</button>
+
+        <p class="register-link">
+            Chưa có tài khoản? <a href="#">Đăng ký</a>
+        </p>
+    </form>
+</div>
+
+<script src="JS/login.js"></script>
+</body>
+</html>
