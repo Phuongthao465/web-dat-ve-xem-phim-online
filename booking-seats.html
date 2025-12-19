@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đặt vé xem phim - Chọn ghế</title>
+  <link rel="stylesheet" href="css/booking-seats.css">
+</head>
+<body>
+  <h1>🎬 Chọn ghế của bạn</h1>
+  <div class="screen">Màn hình</div>
+
+  <!-- Ghi chú màu -->
+  <div class="legend">
+    <div class="legend-item"><div class="color-box color-normal"></div> Ghế thường (45.000đ)</div>
+    <div class="legend-item"><div class="color-box color-double"></div> Ghế đôi (100.000đ)</div>
+    <div class="legend-item"><div class="color-box color-selected"></div> Ghế đang chọn</div>
+    <div class="legend-item"><div class="color-box color-booked"></div> Ghế đã đặt</div>
+  </div>
+
+  <div id="seatContainer"></div>
+
+  <div class="info-box">
+    <p id="selectedInfo">Chưa chọn ghế nào</p>
+    <p id="totalPrice">💰 Tổng tiền: 0 đ</p>
+  </div>
+
+  <button onclick="confirmSeats()">Xác nhận đặt vé</button>
+
+  <script src="js/booking-seats.js"></script>
+</body>
+</html>
