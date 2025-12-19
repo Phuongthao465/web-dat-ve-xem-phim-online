@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập - Web Đặt Vé Xem Phim</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-box">
+
+    <div class="back">
+        <a href="index.html">← Trang chủ</a>
+    </div>
+
+    <h1>🔐 Đăng nhập</h1>
+
+    <div class="input-group">
+        <input type="text" id="username" placeholder="Tên đăng nhập">
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <span class="toggle" onclick="togglePassword()">👁️</span>
+    </div>
+
+    <button onclick="login()">Đăng nhập</button>
+    <p id="message"></p>
+
+    <div style="margin-top: 15px;">
+        Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+<script>
+function togglePassword() {
+    let pass = document.getElementById("password");
+    pass.type = pass.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>
