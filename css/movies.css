@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 25px;
+    scroll-behavior: smooth;
+}
+
+.movie-card {
+    background-color: #1e293b;
+    width: 200px;
+    border-radius: 12px;
+    padding: 10px;
+    flex: 0 0 auto;
+    box-shadow: 0 0 12px rgba(255,255,255,0.08);
+    transition: transform .25s, box-shadow .25s;
+}
+
+/* Hiệu ứng hover sáng card */
+.movie-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Hiệu ứng sáng poster */
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: filter .25s, transform .25s;
+}
+
+.movie-card:hover img {
+    filter: brightness(1.25) contrast(1.1);
+    transform: scale(1.03);
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.movie-info {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 4px;
+}
+
+/* Thanh cuộn đẹp */
+::-webkit-scrollbar {
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
