@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký tài khoản - Web Đặt Vé Xem Phim</title>
+  <link rel="stylesheet" href="css/register.css">
+  
+</head>
+<body>
+  <div class="register-box">
+
+    <!-- LINK QUAY LẠI TRANG CHỦ -->
+    <div style="text-align:left; width:90%; margin:0 auto 10px;">
+      <a href="index.html">← Trang chủ</a>
+    </div>
+
+    <h1>📝 Đăng ký tài khoản</h1>
+
+    <label for="username">Tên đăng nhập</label>
+    <input type="text" id="username" placeholder="Nhập tên đăng nhập" required>
+
+    <label for="fullname">Họ và tên</label>
+    <input type="text" id="fullname" placeholder="Nhập họ và tên" required>
+
+    <label for="dob">Ngày sinh</label>
+    <input type="date" id="dob" required>
+
+    <label for="cccd">Số CCCD/CMND</label>
+    <input type="text" id="cccd" placeholder="Nhập số CCCD/CMND" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Nhập email" required>
+
+    <label for="phone">Số điện thoại</label>
+    <input type="text" id="phone" placeholder="Nhập số điện thoại" required>
+
+    <label for="password">Mật khẩu</label>
+    <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+
+    <label for="confirm">Xác nhận mật khẩu</label>
+    <input type="password" id="confirm" placeholder="Nhập lại mật khẩu" required>
+
+    <div class="checkbox">
+      <input type="checkbox" id="agree" required>
+      <label for="agree" style="display:inline;">
+        Tôi đã đọc và đồng ý với <a href="#">các điều khoản & điều kiện của thành viên rạp</a>.
+      </label>
+    </div>
+
+    <div class="policy">
+      📜 Bằng việc đăng ký, bạn xác nhận đã hiểu và đồng ý với 
+      <a href="#">chính sách bảo mật</a> – đảm bảo an toàn cho dữ liệu cá nhân.
+    </div>
+
+    <button onclick="register()">Đăng ký</button>
+
+    <p id="message"></p>
+
+    <div class="bottom-link">
+      Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a>
+    </div>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
