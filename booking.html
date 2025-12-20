@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt vé - Web Đặt Vé Xem Phim</title>
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+
+
+<div class="container">
+  <h2>Chọn ngày chiếu</h2>
+  <div class="dates" id="dateContainer"></div>
+
+  <h3>Chọn suất chiếu</h3>
+
+  <div class="cinema" id="cinestar">
+    <h4>CineStar Huế</h4>
+    <p>25 Hai Bà Trưng, Vĩnh Ninh, TP. Huế</p>
+    <div class="showtimes" id="cinestarTimes"></div>
+  </div>
+
+  <div class="cinema" id="lotte">
+    <h4>Lotte Huế</h4>
+    <p>174 Bà Triệu, Phường Phú Hội, Tầng 3 TTTM Big C Huế</p>
+    <div class="showtimes" id="lotteTimes"></div>
+  </div>
+
+  <div class="cinema" id="galaxy">
+    <h4>Galaxy Aeon Huế</h4>
+    <p>Tầng 4, AEON Mall Huế, Số 8 Võ Nguyên Giáp, Phường An Cựu, TP.Huế</p>
+    <div class="showtimes" id="galaxyTimes"></div>
+  </div>
+
+  <button onclick="confirmBooking()">Tiếp tục</button>
+  <a href="index.html">⬅ Quay lại trang chủ</a>
+</div>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
