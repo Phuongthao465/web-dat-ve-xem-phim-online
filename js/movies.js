@@ -13,6 +13,6 @@ movieCards.forEach(card => {
         localStorage.setItem("movieType", type);
 
         // Chuyển trang
-        window.location.href = "movie-detail.html";
+        window.location.href = "detail.html";
     });
 });
