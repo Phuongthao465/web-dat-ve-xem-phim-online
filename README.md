@@ -59,3 +59,5 @@ Cách 2: Chạy bằng Live Server
 Mở project bằng VS Code
 Cài extension Live Server
 Chuột phải index.html → Open with Live Server.
+
+
