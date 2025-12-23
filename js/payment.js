@@ -50,4 +50,16 @@ function printInvoice() {
 function goInvoiceHistory() {
   window.location.href = "invoice.html";
 }
+fetch("/api/save_invoice.php", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    user_id: 1,
+    movie_name,
+    show_time,
+    seats,
+    total_price,
+    payment_method: "Momo"
+  })
+});
 
